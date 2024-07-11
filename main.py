@@ -1,11 +1,7 @@
-4.	import logging
-5.	
-6.	# TODO: Configure logging
-7.	logger = logging.getLogger(__name__)
-8.	
+from config import GOOGLE_API_KEY
+import genai_manager
 
-9.	if __name__ == "__main__":
-10.	    # TODO: start bot 
-11.	    pass
-
+if __name__ == "__main__":
+    message = input("Enter your message: ")
+    display(generate_response(message))
 
